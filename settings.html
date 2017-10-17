@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Piano</title>
+	<link rel="icon" type="image/png" href="Piano.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+		<div class="alert alert-success fade in">
+			<strong>Welcome to Piano.</strong>
+		</div>
+	</div>
+
+	<div class="container">
+		<center><p style="font-size: 18px;"> You have played <span id="notes" style="font-size: 30px;">0</span> notes.</p><center>
+	</div>
+
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li><a href="index.html">Pianos</a></li>	
+			<li class="active"><a href="settings.html">Settings</a></li>	
+		</ul>
+	</div>
+
+	<br />
+	<div class="container">
+		<button onclick="saveGame()" type="button" class="btn btn-success">Save</button>
+		<button onclick="loadGame()" type="button" class="btn btn-success">Load</button>
+		<button onclick="resetGame()" type="button" class="btn btn-danger">Hard Reset</button>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
